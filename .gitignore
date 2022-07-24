@@ -1,0 +1,5 @@
+/venv
+.idea
+__pycache__/
+
+/allure_json_test_result
