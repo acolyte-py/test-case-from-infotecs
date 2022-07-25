@@ -1,3 +1,9 @@
+"""
+    Данный файл common.py я сделал, для того чтобы вынести в отдельный файл некоторые переменные.
+    Дабы минимизировать повторение и читабельность тестов. Конечно можно было бы использовать библиотеку loguru
+    если я не ошибаюсь. Но я решил, для такого проекта хватит.
+"""
+
 SERVICE_URL = "http://localhost:5413"
 SERVICE_URL_ADDITION = f"{SERVICE_URL}/api/addition"
 SERVICE_URL_MULTIPLICATION = f"{SERVICE_URL}/api/multiplication"

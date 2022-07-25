@@ -1,7 +1,16 @@
+"""
+    Файл app.py я сделал, для эммуляции поведения webcalculator.exe
+    Основная задача здесь, по большей части помочь мне, понять работу приложения и примерно понимать как можно
+    протестировать данное поведение. Так как моей целью не было создать копию webcalculator.exe, я сделал проще.
+    Я написал простую функцию [web_calc]. Она ничего не возвращает толком. За результат взял вывод функции [print()]
+    и проверял каждую ветку логики в функции.
+"""
+
 import os
 
 
-def web_calc(exe_file, command, ip_addr=None, port=None):
+def web_calc(exe_file, command, ip_addr=None, port=None) -> None:
+    """Базовые значения в случаи если не были явно указаны ip_addr и port"""
     ip = "127.0.0.1"
     p = 17678
     if command == "start":
@@ -46,6 +55,3 @@ def web_calc(exe_file, command, ip_addr=None, port=None):
 #     error_log = f"{exe_file}: error: argument command: invalid choice: '{command}' [choose from 'start', 'stop', " \
 #                 f"'restart', 'show_log'] "
 #     print(error_log)
-
-
-web_calc("webcalc", "start")

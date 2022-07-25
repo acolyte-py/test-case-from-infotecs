@@ -1,3 +1,12 @@
+"""
+    test_02_calculator.py - Позитивные тесты для расчётов.
+    В качестве каркаса используются функции из файла: "calculator.py".
+    Основная логика, я брал определённые параметры. Параметры выбирались дабы максимально проверить возможные
+    исключение в расчётах, например с 0 или - отрицательные числа.
+
+    Использовал библиотеку pytest для марки parametrize, чтобы одна тест функция брала несколько значений для теста
+"""
+
 import pytest
 
 from dir_for_help_test.calculator import addition, multiplication, division, remainder
@@ -5,6 +14,7 @@ from dir_for_help_test.common import error_code_1
 
 
 class TestAddition:
+    """TestAddition - проверяет правильность расчётов функции [addition] (сложение)"""
     param = [
         (778899, 224411, 1003310),
         (-1414, -5523, -6937),
@@ -19,6 +29,7 @@ class TestAddition:
 
 
 class TestMultiplication:
+    """TestMultiplication - проверяет правильность расчётов функции [multiplication] (умножение)"""
     param = [
         (540, 0, 0),
         (-320, -290, 92800),
@@ -33,6 +44,7 @@ class TestMultiplication:
 
 
 class TestDivision:
+    """TestDivision - проверяет правильность расчётов функции [division] (деление)"""
     param = [
         (10, 5, 2),
         (100, 50, 2),
@@ -47,6 +59,7 @@ class TestDivision:
 
 
 class TestRemainder:
+    """TestRemainder - проверяет правильность расчётов функции [remainder] (остаток от деления)"""
     param = [
         (-1000, 7, 1),
         (56001, -78, -3),
