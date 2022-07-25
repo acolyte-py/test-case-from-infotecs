@@ -44,6 +44,10 @@ allure serve {YOU_DIR}
 <http://192.168.188.1:51611/>
 ``
 
+![chrome_3AC8plJMHt](https://user-images.githubusercontent.com/75732226/180754462-75520abb-a488-4f86-8c66-57ce2496895c.png)
+
+![chrome_u6EtwBo6lA](https://user-images.githubusercontent.com/75732226/180754750-e44a3f30-7dc5-46e2-b3b4-351b736aa968.png)
+
 ### Pytest and Docker 🔵
 В данном проекте есть готовый Dockerfile. С помощью которого вы можете запустить тесты
 с помощью докера. Важная ремарка: "Docker Desktop должен быть установлен, и запущен".
